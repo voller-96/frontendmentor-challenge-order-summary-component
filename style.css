@@ -1,0 +1,141 @@
+/* General style */
+body {
+    margin:0;
+    padding:0;
+    border:0;
+    font-family:'Red Hat Display', sans-serif;
+}
+
+.flex {
+    background-color: #e0e8ff; 
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card-payment {
+    border-radius:11px; 
+    padding:5px;
+    margin: 0px 24px;   
+    background-color: #F7F9FF;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+/* Specific style */
+
+.card {
+    border-radius:20px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    background-color:#fff;
+    width: 400px;
+    height: 620px;
+}
+
+.card-image {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width:100%;
+    height:220px;
+}
+
+.card-title {
+    color:#1F2E55;
+    font-weight:900;
+    font-size:28px;
+}
+
+.card-description {
+    font-weight: 900;
+    font-size:16px;
+    line-height:26px;
+    color:#717FA6;
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+.card-payment-paragraph {
+    margin-left:-10px;
+}
+
+.card-payment-paragraph-1{
+    color:#1F2E55;
+    font-weight:900;
+    font-size:16px;   
+}
+
+.card-payment-paragraph-2{
+    margin-top:-10px;
+}
+
+.card-payment-link {
+    margin-left:40px;
+    color:#382AE1;
+    font-size:14px;
+    font-weight: 700;
+    text-decoration:underline;
+}
+
+.card-payment-link:hover {
+    color:#766CF1;
+    text-decoration:none;   
+}
+
+.card-checkout {
+    font-weight: 900;
+    font-size:15px;
+    display:block;
+    margin: 20px auto;
+    padding:15px 102px;
+    border-radius: 11px;
+    border: 1px solid #382AE1;
+    color: #FFFFFF;
+    background-color: #382AE1;
+}
+
+.card-checkout:hover {
+    background-color:#766CF1;
+    cursor:pointer;
+
+}
+
+.card-link {
+    font-size:15px;
+    font-weight:900;
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+    text-decoration:none;
+    color:#717FA6;
+}
+
+.card-link:hover {
+    color:#1F2E55;
+}
+
+@media (max-width:600px) {
+    .card {
+        width:400px;
+        height:550px;
+        margin:0px 24px;
+    }
+
+    .card-image {
+        width:100%;
+        height:160px;
+    }
+
+    .card-checkout {
+        display:flex;
+        justify-content:center;
+        padding: 15px 64px;
+    }
+    
+    .card-payment {
+        display:flex;
+        justify-content:space-evenly;
+    }
+
+}
